@@ -1,11 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #4facfe, #00f2fe);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #333;
+    }
+    .login-container {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      padding: 2rem;
+      text-align: center;
+    }
+    .login-container h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+      color: #555;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    .form-group input:focus {
+      border-color: #4facfe;
+      outline: none;
+      box-shadow: 0 0 4px rgba(79, 172, 254, 0.5);
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 0.8rem;
+      background: #4facfe;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #00c3fe;
+    }
+    .additional-options {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+    .additional-options a {
+      color: #4facfe;
+      text-decoration: none;
+    }
+    .additional-options a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <h2>WebPage testing</h2>
+  <div class="login-container">
+    <h1>Login</h1>
+    <form>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+      <button type="submit" class="btn">Login</button>
+      <div class="additional-options">
+        <p><a href="#">Forgot Password?</a></p>
+        <p><a href="#">Create an Account</a></p>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
